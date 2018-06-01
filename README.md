@@ -30,9 +30,9 @@ npm run build
 
 1.  [Tensorflow](https://js.tensorflow.org/) js library.
 2.  Used a tensorflow model called [mobilenet](https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md) to predict.
-3.  Used media stream API with canvas to capture and give to tensorflow prediction model mobilenet.
+3.  Used media stream API with canvas to capture and give it to mobilenet model.
 
-### Problems I faced using creating this demo
+### Problems I faced
 
 * Got minification error in TensorJS from webpack uglify plugin.
 * In safari browser in iOS devices, media stream API wont work unless you add `facingMode = "environment";` in constraints object passed to `getUserMedia` API.
