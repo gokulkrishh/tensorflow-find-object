@@ -1,0 +1,25 @@
+{
+	"short_name": "Find Object",
+	"name": "Tensor Flow To Find Object",
+	"icons": [
+		{
+			"src": "/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "png"
+		},
+		{
+			"src": "/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "png"
+		},
+		{
+			"src": "/android-chrome-144x144.png",
+			"sizes": "144x144",
+			"type": "png"
+		}
+	],
+	"start_url": "./index.html?utm=homescreen",
+	"display": "standalone",
+	"theme_color": "#02d8bf",
+	"background_color": "#ffffff"
+}

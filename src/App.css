@@ -1,0 +1,291 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 10px 0;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 19px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	color: inherit;
+}
+
+p {
+	margin: 10px 0;
+}
+
+ul,
+ol {
+	padding-left: 20px;
+}
+
+button {
+	cursor: pointer;
+	padding: 0 8px;
+	color: inherit;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+::-webkit-file-upload-button {
+	appearance: button;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	-ms-appearance: button;
+	-o-appearance: button;
+}
+
+input,
+select,
+button {
+	border: 1px solid #dadada;
+	background-color: #ffffff;
+	color: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	vertical-align: middle;
+}
+
+input[type="file"] {
+	border: 0;
+	vertical-align: baseline;
+}
+
+::-webkit-file-upload-button {
+	font: inherit;
+}
+
+select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+video {
+	transform: translateX(-50%) translateY(-50%);
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+}
+
+.result-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-height: 300px;
+	background-color: #f2f2f2;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	z-index: 1;
+	transform: translateY(255px);
+	transition: transform 0.2s ease-in;
+	padding-bottom: 30px;
+}
+
+button {
+	height: 50px;
+	font-size: 13px;
+	border: 0;
+	background: #02d8bf;
+	color: #fff;
+	margin: 0 auto -5px;
+	display: block;
+	cursor: pointer;
+	outline: 0;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.38);
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.38);
+	-moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.38);
+	-o-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.38);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border-radius: 4px;
+	margin: 20px auto;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	width: 50px;
+	border-radius: 50%;
+	justify-content: center;
+}
+
+button:active {
+	opacity: 0.9;
+	box-shadow: none;
+}
+
+canvas {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-radius: 6px;
+}
+
+.result-container h3 {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.result-container .hide-btn {
+	width: 48px;
+	height: 48px;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+	fill: #524d4d;
+	position: absolute;
+	visibility: hidden;
+}
+
+.result-container .capture-icon {
+	fill: #fff;
+}
+
+.result-container svg:active {
+	opacity: 0.7;
+}
+
+#result p {
+	text-align: center;
+	font-weight: 500;
+}
+
+.spinner {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	-webkit-animation: sk-bounce 2s infinite ease-in-out;
+	animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+	-webkit-animation-delay: -1s;
+	animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-bounce {
+	0%,
+	100% {
+		-webkit-transform: scale(0);
+	}
+	50% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes sk-bounce {
+	0%,
+	100% {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+}
+
+#root,
+.App {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow: hidden;
+}
