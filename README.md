@@ -2,6 +2,8 @@
 
 A simple application to demonstrate tensorflowjs using mobilenet model.
 
+Note: *This demo uses the pretrained MobileNet_25_224 model from Keras which you can find here. It is not trained to recognize human faces. For best performance, upload images of objects like piano, coffee mugs, bottles, etc*
+
 ## [Demo](https://find.surge.sh)
 
 ![Demo GIF](https://github.com/gokulkrishh/tensorflow-find-object/blob/master/FindObject.gif)
