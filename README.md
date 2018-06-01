@@ -4,6 +4,8 @@ A simple application to demonstrate tensorflowjs using mobilenet model.
 
 ## [Demo](https://find.surge.sh)
 
+![Demo GIF](https://github.com/gokulkrishh/tensorflow-find-object/blob/master/FindObject.gif)
+
 ## Installation
 
 ```bash
