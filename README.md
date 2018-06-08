@@ -37,7 +37,7 @@ npm run build
 ### Problems I faced
 
 * Got minification error in TensorJS from webpack uglify plugin.
-* Safari browser in iOS device, the media stream API wont work unless you add `facingMode = "environment";` in constraints object passed to `getUserMedia` API + with [this hack].(https://github.com/webrtc/samples/issues/929#issuecomment-330816567).
+* Safari browser in iOS device, the media stream API wont work unless you add `facingMode = "environment";` in constraints object passed to `getUserMedia` API + with [this hack](https://github.com/webrtc/samples/issues/929#issuecomment-330816567).
 * After adding to homescreen, media stream API is not working in safari browser in iOS devcie.
 
 ### MIT Licensed
